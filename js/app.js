@@ -6342,6 +6342,16 @@ PERFORMANCE OF THIS SOFTWARE.
             });
         });
     });
+    document.addEventListener("DOMContentLoaded", function() {
+        const phonesContainer = document.querySelector(".header__phones");
+        const toggleButtons = phonesContainer.querySelectorAll(".header__phone svg:nth-child(3)");
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.stopPropagation();
+                phonesContainer.classList.toggle("active");
+            });
+        });
+    });
     window["FLS"] = true;
     isWebp();
     menuInit();
