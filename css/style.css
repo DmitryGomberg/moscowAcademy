@@ -4471,7 +4471,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     align-items: center;
     width: 100%;
     gap: 14px;
-    margin: 0 auto
+    margin: 0 auto;
+    opacity: 1!important;
+    -webkit-transform: translate(0)!important;
+    transform: translate(0)!important
   }
   .feedback__title span {
     font-size: 16px;
